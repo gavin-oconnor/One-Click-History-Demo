@@ -23,7 +23,7 @@ const Page = ({ index, src, reset }) => {
         display: "flex",
         justifyContent: "center",
         flexDirection: "column",
-        width: 500,
+        width: Math.min(500, window.innerWidth - 20),
         marginLeft: "auto",
         marginRight: "auto",
       }}
@@ -34,7 +34,7 @@ const Page = ({ index, src, reset }) => {
       <h2 style={{ textAlign: "center" }}>{knowl[index % 2].title}</h2>
       <div
         style={{
-          width: 500,
+          width: Math.min(500, window.innerWidth - 20),
           height: 300,
           alignItems: "center",
           justifyContent: "center",

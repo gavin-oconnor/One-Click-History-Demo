@@ -13,7 +13,7 @@ const Dropper = ({ setFile }) => {
     <div
       {...getRootProps()}
       style={{
-        width: 500,
+        width: Math.min(500, window.innerWidth - 20),
         height: 300,
         border: "2px #ffffcf solid",
         borderRadius: 20,
